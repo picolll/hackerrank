@@ -27,4 +27,3 @@ for ($i = 0; $i < $n - 1; $i++) {
 }
 echo "$maxTopic\n$maxTopicTeams[$maxTopic]";
 fclose($handle);
-
