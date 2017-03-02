@@ -1,6 +1,6 @@
 <?php
 
-// TODO
+// TODO inProgress 8.33 / 50 score
 $handle            = fopen("php://stdin", "r");
 $numberOfTestCases = trim(fgets($handle));
 for ($t = 1; $t <= $numberOfTestCases; $t++) {
