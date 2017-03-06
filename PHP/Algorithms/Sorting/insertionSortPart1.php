@@ -1,5 +1,5 @@
 <?php
-function  insertionSort($ar)
+function insertionSort($ar)
 {
     $e      = array_pop($ar);
     $finish = false;
@@ -32,4 +32,5 @@ for ($i = 0; $i < count($ar); $ar[$i++] += 0) {
     ;
 }
 insertionSort($ar);
-?>
+
+fclose($handle);
