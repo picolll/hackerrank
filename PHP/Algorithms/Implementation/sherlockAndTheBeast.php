@@ -14,7 +14,6 @@ function decentNumber($n)
 {
     $fives  = 0;
     $threes = 0;
-    $max    = 0;
     if ($n / 3 == 0) {
         $fives = $n;
         display($fives, $threes);
@@ -22,7 +21,7 @@ function decentNumber($n)
     }
 
     $max = floor($n / 3);
-    for ($max; $max > 0; $max--) {
+    for (; $max > 0; $max--) {
         $fives  = $max * 3;
         $threes = $n - $fives;
         if ($threes % 5 == 0) {
@@ -32,7 +31,7 @@ function decentNumber($n)
     }
 
     $max = floor($n / 5);
-    for ($max; $max >= 1; $max--) {
+    for (; $max >= 1; $max--) {
         $threes = $max * 5;
         $fives  = $n - $threes;
         if ($fives % 3 == 0) {

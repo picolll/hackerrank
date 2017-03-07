@@ -4,7 +4,7 @@ $handle = fopen("php://stdin", "r");
 $nt                = fgets($handle);
 $nt                = explode(' ', $nt);
 $numberOfTestCases = (int)$nt[1];
-$n                 = (int)$nt[1];
+$n                 = (int)$nt[0];
 $w                 = trim(fgets($handle));
 $width             = explode(' ', $w);
 for ($i = 1; $i <= $numberOfTestCases; $i++) {
@@ -24,4 +24,3 @@ for ($i = 1; $i <= $numberOfTestCases; $i++) {
     echo "{$r}\n";
 }
 fclose($handle);
-
